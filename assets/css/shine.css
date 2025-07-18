@@ -2,7 +2,36 @@
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+
+ Palette 1
+ #584053
+ #8DC6BF
+ #FCBC66
+ #F97B4F
+
+Palette 2
+#6C8A9B
+#E6E6E4
+#F9F53F
+#FD6574
+
+Palette 3
+#F3DECA
+#FA9483
+#2D4057
+#4097AA
+
  */
+
+.more-content {
+    display: none;
+}
+.show-more-button {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 :root, [data-bs-theme=light] {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -13597,11 +13626,11 @@ small, .small {
 }
 
 .light-mode .resume-company-name {
-    background: #e4e9f2
+    background: #F3DECA
 }
 
 .light-mode .resume-section-heading-icon {
-    background: #8497bc;
+    background: #4097AA;
     color: #fff;
     font-weight: bold
 }
@@ -13615,7 +13644,7 @@ small, .small {
 }
 
 .light-mode .resume-skill-badge {
-    background: #4f6591;
+    background: rgba(64, 151, 170, 0.5);
     color: #fff
 }
 
@@ -13640,12 +13669,12 @@ small, .small {
 }
 
 .light-mode .resume-timeline-item:before {
-    border-color: #b1c1d8;
+    border-color: #2D4057;
     background-color: #e4e9f2
 }
 
 .light-mode .resume-timeline:before {
-    background: #b1c1d8;
+    background: rgba(64, 151, 170, 0.8);
     top: 12px
 }
 
@@ -13768,6 +13797,20 @@ small, .small {
 .resume-position-title.small-mode {
     font-size: 1rem;
     color: #000000;
+}
+
+.paper-title {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+.publication-details p {
+    margin-bottom: 0.3rem; /* or adjust to your preference */
+}
+
+.localities {
+    margin-bottom: 0.3rem; /* or adjust to your preference */
+    font-size: 0.8rem;
 }
 
 
