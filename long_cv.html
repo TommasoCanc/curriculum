@@ -17,6 +17,7 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/shine.css">
+
 </head>
 
 <body class="light-mode">
@@ -40,24 +41,11 @@
     }
 </script>
 
-<!--Go to top button-->
 <script>
-    // Show the button after scrolling down 100px
-    window.onscroll = function () {
-        const btn = document.getElementById("goTopBtn");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            btn.style.display = "block";
-        } else {
-            btn.style.display = "none";
-        }
-    };
-
-    // Scroll to top when the button is clicked
-    function topFunction() {
+    function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 </script>
-
 
 <div class="main-content-wrapper">
     <div class="container-fluid">
@@ -75,9 +63,11 @@
                             class="fa-brands fa-google-scholar"></i></a></li> <!-- Scholar -->
                     <li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://orcid.org/0000-0002-6637-4764"><i
                             class="fa-brands fa-brands fa-orcid"></i></a></li> <!-- Orcid  -->
-                </ul><!--//social-list-->
-            </div><!--//top-bar-inner-->
-        </div><!--// Top-bar-->
+                    <li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://www.linkedin.com/in/tommaso-cancellario-a7a650106/"><i
+                            class="fa-brands fa-brands fa-linkedin"></i></a></li> <!-- Linkedin -->
+                </ul>
+            </div>
+        </div> <!--// Top-bar-->
 
         <div class="resume-wrapper mx-auto rounded-2">
             <div class="resume-header px-4 px-lg-5">
@@ -107,13 +97,7 @@
                             <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3">
                                 <i class="resume-section-heading-icon bi bi-person me-2"></i>About me</h3>
                             <div class="resume-summary-desc">
-                                I'm an ecologist with a passion for making sense of biodiversity through big data, spatial ecology, and ecological modeling. I love working with large-scale datasets to uncover patterns in species distribution and how ecosystems respond to global change. <br><br>
-
-                                My research explores how biodiversity is structured and how its different components like taxonomy, traits, and even genetics interact. This means I get to work with all kinds of data and tools, and I especially enjoy developing software that supports ecological research. From building databases to creating R and Python packages, I like making science more efficient and accessible. <br><br>
-
-                                As Head of the Data Management and Analysis Unit, I've had the chance to lead a talented, multidisciplinary team composed by biologists and software developers. I'm always looking for ways to boost collaboration, simplify complex workflows, and keep innovation at the heart of what we do. <br><br>
-
-                                I'm a strong believer in open science and the power of working together. Whether it's through open source tools or collaborative research, I'm committed to using good science and smart technology to help build a more sustainable future. <br><br>
+                                I'm an ecologist passionate about understanding biodiversity through big data, spatial ecology, and ecological modeling. My work focuses on uncovering patterns in species distribution and ecosystem responses to global change, integrating taxonomy, traits, and genetics. I lead a multidisciplinary team as Head of the Data Management and Analysis Unit, where I drive innovation in ecological research through software development, data infrastructure, and collaborative workflows. Committed to open science, I develop tools in R and Python to make research more efficient, accessible, and impactful.
                             </div>
                         </section><!--// About me-->
 
@@ -135,12 +119,12 @@
                                         <h3 class="resume-position-title small-mode">Postdoc - Head of the Data
                                             Management and Analysis Unit</h3>
 
-                                    </div><!--//resume-timeline-item-header-->
+                                    </div>
                                     <div class="resume-timeline-item-desc">
                                         <p class="localities">University of the Balearic Islands, Palma, Spain</p>
                                         <ul class="resume-summary-desc">
                                             <li>
-                                                I lead scientific projects in functional ecology, biodiversity big-data analysis, spatial modeling, and the assessment of biodiversity knowledge gaps. I design and manage the development of Balearica, the biodiversity data platform for the Balearic Islands, which integrates and visualizes regional biodiversity information. I develop biodumpy, a Python package for processing biodiversity data, and serve as the conceptual designer of specifind, an AI-based Python tool for species identification and classification.
+                                                I lead scientific research in functional ecology, biodiversity big-data analysis, spatial modeling, and the assessment of biodiversity knowledge gaps. I design and manage the development of Balearica, the biodiversity data platform for the Balearic Islands, which integrates and visualizes regional biodiversity information. I develop biodumpy, a Python package for processing biodiversity data, and serve as the conceptual designer of specifind, an AI-based Python tool for species identification and classification.
                                             </li>
                                             <li>
                                                 <b>Relevant project:</b> High-resolution climate change information of
@@ -149,7 +133,7 @@
                                             </li>
                                         </ul>
 
-                                    </div><!--//resume-timeline-item-desc-->
+                                    </div>
 
                                 </article><!--//UIB CBB-->
 
@@ -180,6 +164,7 @@
                                     </div><!--//resume-timeline-item-desc-->
                                 </article><!--// CNR-->
 
+                                <!--
                                 <article class="resume-timeline-item position-relative pb-2">
                                     <div class="resume-timeline-item-header mb-2">
 
@@ -189,7 +174,7 @@
                                         </div>
                                         <h3 class="resume-position-title small-mode">PhD</h3>
 
-                                    </div><!--//resume-timeline-item-header-->
+                                    </div>
                                     <div class="resume-timeline-item-desc">
                                         <p class="localities">University of Navarra, Pamplona, Spain</p>
                                         <ul class="resume-summary-desc">
@@ -200,8 +185,9 @@
                                                 <b>Relevant Publication</b>: <b>Cancellario, T.</b>, Miranda, R., Baquero, E., Fontaneto, D., Martinez, A., & Mammola, S. (2022). Climate change will redefine taxonomic, functional, and phylogenetic diversity of Odonata in space and time. npj Biodiversity, 1(1), 1.
                                             </li>
                                         </ul>
-                                    </div><!--//resume-timeline-item-desc-->
-                                </article><!--// PhD-->
+                                    </div>
+                                </article>
+                                --> <!--// PhD-->
 
                                 <article class="resume-timeline-item position-relative pb-2">
                                     <div class="resume-timeline-item-header mb-2">
@@ -237,7 +223,6 @@
                                         </ul>
                                     </div><!--//resume-timeline-item-desc-->
                                 </article><!--// UNIPR-->
-
                             </div>
                         </section><!--// Work Experience-->
 
@@ -246,7 +231,7 @@
                         <section class="resume-experience-section resume-section">
                             <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
                                 <i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Publications</h3>
-                            <p> Total: 27</p>
+                            <p> Total: 27 - h index: 10</p>
 
                             <div class="resume-timeline position-relative" id="publication-list">
 
@@ -255,10 +240,39 @@
                                     <div class="resume-timeline-item-header mb-2">
 
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
+                                            <div class="resume-position-time"><b>2025</b></div>
+                                        </div>
+
+                                        <h3 class="paper-title">27. Multi-method distribution modelling of an invasive crayfish (<i>Pontastacus leptodactylus</i>) at Eurasian scale.</h3>
+                                        <div class="resume-summary-desc">
+                                            <div class="publication-details">
+                                                <p>
+                                                    <strong>Authors:</strong> Hodson J., South J., <b>Cancellario T.</b>, Guareschi S.
+                                                </p>
+                                                <p><strong>Journal:</strong> <em>Hydrobiologia  </em>
+                                                    <br><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10750-024-05641-z" target="_blank">10.1007/s10750-024-05641-z</a>
+                                                </p>
+                                                <p><strong>Impact Factor:</strong> 2.2 (2023 - Clarivate)
+                                                    <br><strong>Quartile:</strong> Marine & freshwater biology Q1 (2023 - Clarivate)
+                                                </p>
+                                                <p><strong>Status:</strong> Accepted (2025) - Scientific Article</p>
+                                                <p><strong>Cite:</strong> Hodson, J., South, J., Cancellario, T., & Guareschi, S. (2025). Multi-method distribution modelling of an invasive crayfish (<i>Pontastacus leptodactylus</i>) at eurasian scale. Hydrobiologia, 852(8), 2115-2131.</p>
+                                            </div>
+                                        </div> <!--Multi-method distribution modelling of an invasive crayfish (Pontastacus leptodactylus) at Eurasian scale.-->
+
+                                        <hr>
+
+                                    </div>
+                                </article> <!-- // 2025-->
+
+                                <article class="resume-timeline-item position-relative pb-2">
+                                    <div class="resume-timeline-item-header mb-2">
+
+                                        <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time"><b>2024</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">Some like it cold: long term assessment of a near-global invader.</h3>
+                                        <h3 class="paper-title">26. Some like it cold: long term assessment of a near-global invader.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -277,9 +291,7 @@
                                             </div>
                                         </div> <!--Some like it cold: long term assessment of a near-global invader-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Potential Arrival Pathway for Highly Pathogenic Avian Influenza H5N1 to Oceania.</h3>
+                                        <h3 class="paper-title">25. Potential Arrival Pathway for Highly Pathogenic Avian Influenza H5N1 to Oceania.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -295,52 +307,31 @@
                                                 <p><strong>Cite:</strong> Plaza, P., Santangeli, A., Cancellario, T., & Lambertucci, S. (2024). Potential Arrival Pathway for Highly Pathogenic Avian Influenza H5N1 to Oceania. Influenza and Other Respiratory Viruses, 18(12), e70055.</p>
                                             </div>
                                         </div> <!--Potential Arrival Pathway for Highly Pathogenic Avian Influenza H5N1 to Oceania.-->
-
-                                        <hr>
-
-                                        <h3 class="paper-title">World of Crayfish<sup>TM</sup>: a web platform towards real-time global mapping of freshwater crayfish and their pathogens.</h3>
-                                        <div class="resume-summary-desc">
-                                            <div class="publication-details">
-                                                <p>
-                                                    <strong>Authors:</strong> Ion, M. C., Bloomer, C. C., Barascu, T. I., Oficialdegui, F. J., Shoobs, N. F., Williams, B. W., ... & Parvulescu, L.
-                                                </p>
-                                                <p><strong>Journal:</strong> <em>PeerJ </em>
-                                                    <br><strong>DOI:</strong> <a href="https://doi.org/10.7717/peerj.18229" target="_blank">10.7717/peerj.18229</a>
-                                                </p>
-                                                <p><strong>Impact Factor:</strong> 2.3 (2023 - Clarivate)
-                                                    <br><strong>Quartile:</strong> Multidisciplinary sciences Q2 (2023 - Clarivate)
-                                                </p>
-                                                <p><strong>Status:</strong> Accepted (2024) - Scientific Article</p>
-                                                <p><strong>Cite:</strong> Ion, M. C., Bloomer, C. C., Barascu, T. I., Oficialdegui, F. J., Shoobs, N. F., Williams, B. W., ... & Parvulescu, L. (2024). World of Crayfish<sup>TM</sup>: a web platform towards real-time global mapping of freshwater crayfish and their pathogens. PeerJ, 12, e18229.</p>
-                                            </div>
-                                        </div> <!--World of Crayfish™: a web platform towards real-time global mapping of freshwater crayfish and their pathogens.-->
                                     </div>
                                 </article>
 
                                 <div id="more-publications" class="d-none">
-                                    <article class="resume-timeline-item position-relative pb-2">
+                                    <!--<article class="resume-timeline-item position-relative pb-2">-->
                                         <div class="resume-timeline-item-header mb-2">
 
-                                            <h3 class="paper-title">Multi-method distribution modelling of an invasive crayfish (<i>Pontastacus leptodactylus</i>) at Eurasian scale.</h3>
+                                            <h3 class="paper-title">24. World of Crayfish<sup>TM</sup>: a web platform towards real-time global mapping of freshwater crayfish and their pathogens.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
-                                                        <strong>Authors:</strong> Hodson J., South J., <b>Cancellario T.</b>, Guareschi S.
+                                                        <strong>Authors:</strong> Ion, M. C., Bloomer, C. C., Barascu, T. I., Oficialdegui, F. J., Shoobs, N. F., Williams, B. W., ... & Parvulescu, L.
                                                     </p>
-                                                    <p><strong>Journal:</strong> <em>Hydrobiologia  </em>
-                                                        <br><strong>DOI:</strong> <a href="https://doi.org/10.1007/s10750-024-05641-z" target="_blank">10.1007/s10750-024-05641-z</a>
+                                                    <p><strong>Journal:</strong> <em>PeerJ </em>
+                                                        <br><strong>DOI:</strong> <a href="https://doi.org/10.7717/peerj.18229" target="_blank">10.7717/peerj.18229</a>
                                                     </p>
-                                                    <p><strong>Impact Factor:</strong> 2.2 (2023 - Clarivate)
-                                                        <br><strong>Quartile:</strong> Marine & freshwater biology Q1 (2023 - Clarivate)
+                                                    <p><strong>Impact Factor:</strong> 2.3 (2023 - Clarivate)
+                                                        <br><strong>Quartile:</strong> Multidisciplinary sciences Q2 (2023 - Clarivate)
                                                     </p>
                                                     <p><strong>Status:</strong> Accepted (2024) - Scientific Article</p>
-                                                    <p><strong>Cite:</strong> Hodson, J., South, J., Cancellario, T., & Guareschi, S. (2024). Multi-method distribution modelling of an invasive crayfish (<i>Pontastacus leptodactylus</i>) at eurasian scale. Hydrobiologia, 1-17.</p>
+                                                    <p><strong>Cite:</strong> Ion, M. C., Bloomer, C. C., Barascu, T. I., Oficialdegui, F. J., Shoobs, N. F., Williams, B. W., ... & Parvulescu, L. (2024). World of Crayfish<sup>TM</sup>: a web platform towards real-time global mapping of freshwater crayfish and their pathogens. PeerJ, 12, e18229.</p>
                                                 </div>
-                                            </div> <!--Multi-method distribution modelling of an invasive crayfish (Pontastacus leptodactylus) at Eurasian scale.-->
+                                            </div> <!--World of Crayfish™: a web platform towards real-time global mapping of freshwater crayfish and their pathogens.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Unravelling large-scale patterns and drivers of biodiversity in dry rivers.</h3>
+                                            <h3 class="paper-title">23. Unravelling large-scale patterns and drivers of biodiversity in dry rivers.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
@@ -359,9 +350,7 @@
                                                 </div>
                                             </div> <!--Unravelling large-scale patterns and drivers of biodiversity in dry rivers.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">European Water Frame Directive ecoregions do not adequately represent freshwater fish biogeography.</h3>
+                                            <h3 class="paper-title">22. European Water Frame Directive ecoregions do not adequately represent freshwater fish biogeography.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
@@ -380,9 +369,7 @@
                                                 </div>
                                             </div> <!--European Water Frame Directive ecoregions do not adequately represent freshwater fish biogeography.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">The global contribution of vultures towards ecosystem services and sustainability - an experts' perspective.</h3>
+                                            <h3 class="paper-title">21. The global contribution of vultures towards ecosystem services and sustainability - an experts' perspective.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
@@ -401,9 +388,7 @@
                                                 </div>
                                             </div> <!--The global contribution of vultures towards ecosystem services and sustainability - an experts' perspective-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Insights from the past: Invasion trajectory and niche trends of a global freshwater invader.</h3>
+                                            <h3 class="paper-title">20. Insights from the past: Invasion trajectory and niche trends of a global freshwater invader.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
@@ -421,8 +406,11 @@
 
                                                 </div>
                                             </div> <!--Insights from the past: Invasion trajectory and niche trends of a global freshwater invader.-->
+
+                                            <hr>
+
                                         </div>
-                                    </article> <!--// Article 2024-->
+                                    <!-- </article>  // Article 2024-->
 
                                     <article class="resume-timeline-item position-relative pb-2">
 
@@ -430,7 +418,7 @@
                                             <div class="resume-position-time"><b>2023</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">Drivers of species knowledge across the Tree of Life.</h3>
+                                        <h3 class="paper-title">19. Drivers of species knowledge across the Tree of Life.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -447,9 +435,7 @@
                                             </div>
                                         </div> <!--Drivers of species knowledge across the Tree of Life.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">A georeferenced dataset for occurrence records of the phylum Rotifera in Africa.</h3>
+                                        <h3 class="paper-title">18. A georeferenced dataset for occurrence records of the phylum Rotifera in Africa.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -466,9 +452,7 @@
                                             </div>
                                         </div> <!--A georeferenced dataset for occurrence records of the phylum Rotifera in Africa.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">A georeferenced dataset of Italian occurrence records of the phylum Rotifera.</h3>
+                                        <h3 class="paper-title">17. A georeferenced dataset of Italian occurrence records of the phylum Rotifera.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -485,9 +469,7 @@
                                             </div>
                                         </div> <!--A georeferenced dataset of Italian occurrence records of the phylum Rotifera.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">High frequency monitoring through in-situ fluorometric sensors: a supporting tool to long-term ecological research on lakes.</h3>
+                                        <h3 class="paper-title">16. High frequency monitoring through in-situ fluorometric sensors: a supporting tool to long-term ecological research on lakes.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -504,9 +486,7 @@
                                             </div>
                                         </div> <!--High frequency monitoring through in-situ fluorometric sensors: a supporting tool to long-term ecological research on lakes.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Among demons and killers: current and future potential distribution of two hyper successful invasive gammarids.</h3>
+                                        <h3 class="paper-title">15. Among demons and killers: current and future potential distribution of two hyper successful invasive gammarids.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -523,9 +503,7 @@
                                             </div>
                                         </div> <!--Among demons and killers: current and future potential distribution of two hyper successful invasive gammarids.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">A combination of host ecology and habitat but not evolutionary history explains differences in the microbiomes associated with rotifers</h3>
+                                        <h3 class="paper-title">14. A combination of host ecology and habitat but not evolutionary history explains differences in the microbiomes associated with rotifers</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -542,9 +520,7 @@
                                             </div>
                                         </div> <!--A combination of host ecology and habitat but not evolutionary history explains differences in the microbiomes associated with rotifers-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">First record of <i>Trocheta subviridis</i> Dutrochet, 1817 (Arhynchobdellida, Erpobdellidae) from the north-eastern Iberian Peninsula (Navarra, Spain).</h3>
+                                        <h3 class="paper-title">13. First record of <i>Trocheta subviridis</i> Dutrochet, 1817 (Arhynchobdellida, Erpobdellidae) from the north-eastern Iberian Peninsula (Navarra, Spain).</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -561,6 +537,8 @@
                                             </div>
                                         </div> <!--First record of Trocheta subviridis Dutrochet, 1817 (Arhynchobdellida, Erpobdellidae) from the north-eastern Iberian Peninsula (Navarra, Spain).-->
 
+                                        <hr>
+
                                     </article> <!--// Article 2023-->
 
                                     <article class="resume-timeline-item position-relative pb-2">
@@ -569,7 +547,7 @@
                                             <div class="resume-position-time"><b>2022</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">biomonitoR: an R package for managing ecological data and calculating biomonitoring indices.</h3>
+                                        <h3 class="paper-title">12. biomonitoR: an R package for managing ecological data and calculating biomonitoring indices.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -586,9 +564,7 @@
                                             </div>
                                         </div> <!--biomonitoR: an R package for managing ecological data and calculating biomonitoring indices.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Climate change will redefine taxonomic, functional, and phylogenetic diversity of Odonata in space and time.</h3>
+                                        <h3 class="paper-title">11. Climate change will redefine taxonomic, functional, and phylogenetic diversity of Odonata in space and time.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -605,9 +581,7 @@
                                             </div>
                                         </div> <!--Climate change will redefine taxonomic, functional, and phylogenetic diversity of Odonata in space and time.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Diversification rates in Tardigrada indicate a decreasing tempo of lineage splitting regardless of reproductive mode.</h3>
+                                        <h3 class="paper-title">10. Diversification rates in Tardigrada indicate a decreasing tempo of lineage splitting regardless of reproductive mode.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -624,9 +598,7 @@
                                             </div>
                                         </div> <!--Diversification rates in Tardigrada indicate a decreasing tempo of lineage splitting regardless of reproductive mode.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">The new checklist of the Italian Fauna: Rotifera.</h3>
+                                        <h3 class="paper-title">9. The new checklist of the Italian Fauna: Rotifera.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -643,9 +615,7 @@
                                             </div>
                                         </div> <!--The new checklist of the Italian Fauna: Rotifera.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Effective reassessments of freshwater fish species: a case study in a Mediterranean peninsula.</h3>
+                                        <h3 class="paper-title">8. Effective reassessments of freshwater fish species: a case study in a Mediterranean peninsula.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -662,6 +632,8 @@
                                             </div>
                                         </div> <!--Effective reassessments of freshwater fish species: a case study in a Mediterranean peninsula.-->
 
+                                        <hr>
+
                                     </article> <!--// Article 2022-->
 
                                     <article class="resume-timeline-item position-relative pb-2">
@@ -670,7 +642,7 @@
                                             <div class="resume-position-time"><b>2019</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">Sediment respiration pulses in intermittent rivers and ephemeral streams.</h3>
+                                        <h3 class="paper-title">7. Sediment respiration pulses in intermittent rivers and ephemeral streams.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -687,9 +659,7 @@
                                             </div>
                                         </div> <!--Sediment respiration pulses in intermittent rivers and ephemeral streams.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Taxonomic and functional responses of benthic macroinvertebrate communities to hydrological and water quality variations in a heavily regulated river.</h3>
+                                        <h3 class="paper-title">6. Taxonomic and functional responses of benthic macroinvertebrate communities to hydrological and water quality variations in a heavily regulated river.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -706,9 +676,7 @@
                                             </div>
                                         </div> <!--Taxonomic and functional responses of benthic macroinvertebrate communities to hydrological and water quality variations in a heavily regulated river.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Simulating rewetting events in intermittent rivers and ephemeral streams: A global analysis of leached nutrients and organic matter.</h3>
+                                        <h3 class="paper-title">5. Simulating rewetting events in intermittent rivers and ephemeral streams: A global analysis of leached nutrients and organic matter.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -725,6 +693,8 @@
                                             </div>
                                         </div> <!--Simulating rewetting events in intermittent rivers and ephemeral streams: A global analysis of leached nutrients and organic matter.-->
 
+                                        <hr>
+
                                     </article> <!--// Article 2019-->
 
                                     <article class="resume-timeline-item position-relative pb-2">
@@ -733,7 +703,7 @@
                                             <div class="resume-position-time"><b>2018</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">A global analysis of terrestrial plant litter dynamics in non-perennial waterways.</h3>
+                                        <h3 class="paper-title">4. A global analysis of terrestrial plant litter dynamics in non-perennial waterways.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -750,9 +720,7 @@
                                             </div>
                                         </div> <!--A global analysis of terrestrial plant litter dynamics in non-perennial waterways.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Freshwater macroinvertebrate samples from a water quality monitoring network in the Iberian Peninsula.</h3>
+                                        <h3 class="paper-title">3. Freshwater macroinvertebrate samples from a water quality monitoring network in the Iberian Peninsula.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -769,9 +737,7 @@
                                             </div>
                                         </div> <!--Freshwater macroinvertebrate samples from a water quality monitoring network in the Iberian Peninsula.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Testing the response of macroinvertebrate communities and biomonitoring indices under multiple stressors in a lowland regulated river.</h3>
+                                        <h3 class="paper-title">2. Testing the response of macroinvertebrate communities and biomonitoring indices under multiple stressors in a lowland regulated river.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -788,6 +754,8 @@
                                             </div>
                                         </div> <!--Testing the response of macroinvertebrate communities and biomonitoring indices under multiple stressors in a lowland regulated river.-->
 
+                                        <hr>
+
                                     </article> <!--// Article 2018-->
 
                                     <article class="resume-timeline-item position-relative pb-2">
@@ -796,7 +764,7 @@
                                             <div class="resume-position-time"><b>2016</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">Italian classification method for macroinvertebrates in lakes. Method summary.</h3>
+                                        <h3 class="paper-title">1. Italian classification method for macroinvertebrates in lakes. Method summary.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
@@ -834,8 +802,40 @@
 
                         <section class="resume-experience-section resume-section">
                             <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
-                                <i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Conferences</h3>
-                            <p> Total: 17</p>
+                                <i class="resume-section-heading-icon bi bi-person me-2"></i>Invited presentation</h3>
+                            <p> Total: 1</p>
+
+                            <div class="resume-timeline position-relative">
+                                <article class="resume-timeline-item position-relative pb-2">
+                                    <div class="resume-timeline-item-header mb-2">
+
+                                        <div class="resume-position-meta d-flex justify-content-between mb-1">
+                                            <div class="resume-position-time"><b>2025</b></div>
+                                        </div>
+
+                                        <h3 class="paper-title">1. A new platform for Balearic biodiversity data integration and research</h3>
+                                        <div class="resume-summary-desc">
+                                            <div class="publication-details">
+                                                <p>
+                                                    <strong>Authors:</strong> <b>Cancellario T.</b>
+                                                </p>
+                                                <p><strong>Type of participation:</strong> Oral presentation – Invited lecture </p>
+                                                <p><strong>Conference:</strong> 2nd Biodiversity Interdisciplinary Meeting</p>
+                                                <p><strong>Location:</strong> Palma, España</p>
+                                            </div>
+                                        </div> <!--A new platform for Balearic biodiversity data integration and research-->
+
+                                    </div>
+                                </article> <!-- 2025 -->
+                            </div>
+                        </section><!--// Invited presentation-->
+
+                        <hr>
+
+                        <section class="resume-experience-section resume-section">
+                            <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
+                                <i class="resume-section-heading-icon bi bi-people me-2"></i>Conferences</h3>
+                            <p> Total: 16</p>
 
                             <div class="resume-timeline position-relative" id="conferences-list">
 
@@ -846,76 +846,68 @@
                                             <div class="resume-position-time"><b>2025</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">A new comprehensive platform for biodiversity data integration and research.</h3>
+                                        <h3 class="paper-title">16. A new comprehensive platform for biodiversity data integration and research.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
                                                     <strong>Authors:</strong> Roldán A., Golomb Durán T., <b>Cancellario T.</b>, Far A., Arboleda E., Capa M.
                                                 </p>
-                                                <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                <p><strong>Type of participation:</strong> Oral presentation (not presenting author)</p>
                                                 <p><strong>Conference:</strong> III Meeting of the Iberian Ecological Society (SIBECOL) & XVII National Conference of the Spanish Association of Terrestrial Ecology (AEET)</p>
                                                 <p><strong>Location:</strong> Pontevedra, Spain</p>
                                             </div>
                                         </div> <!--A new comprehensive platform for biodiversity data integration and research.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">Specifind: Extracting occurrences from scientific literature using NLP techniques.</h3>
+                                        <h3 class="paper-title">15. Specifind: Extracting occurrences from scientific literature using NLP techniques.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
                                                     <strong>Authors:</strong> Golomb Durán T., Díaz A., Barroso M., Far A., Roldán A., <b>Cancellario, T.</b>
                                                 </p>
-                                                <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                <p><strong>Type of participation:</strong> Oral presentation (not presenting author)</p>
                                                 <p><strong>Conference:</strong> III Meeting of the Iberian Ecological Society (SIBECOL) & XVII National Conference of the Spanish Association of Terrestrial Ecology (AEET)</p>
                                                 <p><strong>Location:</strong> Pontevedra, Spain</p>
                                             </div>
                                         </div> <!--Specifind: Extracting occurrences from scientific literature using NLP techniques.-->
 
-                                        <hr>
-
-                                        <h3 class="paper-title">biodumpy: A new Python package to download comprehensive biological data.</h3>
+                                        <h3 class="paper-title">14. biodumpy: A new Python package to download comprehensive biological data.</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p>
                                                     <strong>Authors:</strong> <b>Cancellario T.</b>, Golomb Durán T., Far A., Roldán A., Capa M.
                                                 </p>
-                                                <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                <p><strong>Type of participation:</strong> Oral presentation (presenting author)</p>
                                                 <p><strong>Conference:</strong> III Meeting of the Iberian Ecological Society (SIBECOL) & XVII National Conference of the Spanish Association of Terrestrial Ecology (AEET)</p>
                                                 <p><strong>Location:</strong> Pontevedra, Spain</p>
                                             </div>
                                         </div> <!--biodumpy: A new Python package to download comprehensive biological data.-->
 
-                                        <hr>
-
                                     </div>
                                 </article>
 
                                 <div id="more-conferences" class="d-none">
-                                    <article class="resume-timeline-item position-relative pb-2">
+                                    <!--<article class="resume-timeline-item position-relative pb-2">-->
                                         <div class="resume-timeline-item-header mb-2">
 
-                                            <h3 class="paper-title">Balearica: A new platform for Balearic biodiversity data integration and research</h3>
+                                            <h3 class="paper-title">13. Balearica: A new platform for Balearic biodiversity data integration and research</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Golomb Durán T., Roldán A., Far A., Arboleda E., Capa, M.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                    <p><strong>Type of participation:</strong> Oral presentation (presenting author)</p>
                                                     <p><strong>Conference:</strong> II Jornada de Entomología Balear</p>
                                                     <p><strong>Location:</strong> Palma, España </p>
                                                 </div>
                                             </div> <!--Balearica: A new platform for Balearic biodiversity data integration and research-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">biodumpy: A Python package for downloading comprehensive biological</h3>
+                                            <h3 class="paper-title">12. biodumpy: A Python package for downloading comprehensive biological</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Golomb Durán T., Far A., Roldán A., Capa M.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (presenting author)</p>
                                                     <p><strong>Conference:</strong> 2nd Biodiversity Interdisciplinary Meeting</p>
                                                     <p><strong>Location:</strong> Palma, España </p>
                                                 </div>
@@ -923,19 +915,8 @@
 
                                             <hr>
 
-                                            <h3 class="paper-title">A new platform for Balearic biodiversity data integration and research</h3>
-                                            <div class="resume-summary-desc">
-                                                <div class="publication-details">
-                                                    <p>
-                                                        <strong>Authors:</strong> <b>Cancellario T.</b>
-                                                    </p>
-                                                    <p><strong>Type of participation:</strong> Oral presentation – Invited lecture </p>
-                                                    <p><strong>Conference:</strong> 2nd Biodiversity Interdisciplinary Meeting</p>
-                                                    <p><strong>Location:</strong> Palma, España</p>
-                                                </div>
-                                            </div> <!--A new platform for Balearic biodiversity data integration and research-->
                                         </div>
-                                    </article> <!-- 2025 -->
+                                    <!-- </article>  2025 -->
 
                                     <article class="resume-timeline-item position-relative pb-2">
                                         <div class="resume-timeline-item-header mb-2">
@@ -943,31 +924,31 @@
                                                 <div class="resume-position-time"><b>2023</b></div>
                                             </div>
 
-                                            <h3 class="paper-title">Ecological niche and spatial evolution of two Balearic endemic lizards under potential climate change scenarios.</h3>
+                                            <h3 class="paper-title">11. Ecological niche and spatial evolution of two Balearic endemic lizards under potential climate change scenarios.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Laini A., Arboleda E., Capa M.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                    <p><strong>Type of participation:</strong> Oral presentation (presenting author)</p>
                                                     <p><strong>Conference:</strong> V Iberian Congress of Biological Systematics</p>
                                                     <p><strong>Location:</strong> Madrid, Spain</p>
                                                 </div>
                                             </div> <!--Ecological niche and spatial evolution of two Balearic endemic lizards under potential climate change scenarios.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Identifying the need of having molecular data to better characterize the biodiversity of the Balearic Islands.</h3>
+                                            <h3 class="paper-title">10. Identifying the need of having molecular data to better characterize the biodiversity of the Balearic Islands.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Arboleda E., Capa M.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                    <p><strong>Type of participation:</strong> Oral presentation (not presenting author)</p>
                                                     <p><strong>Conference:</strong> V Iberian Congress of Biological Systematics</p>
                                                     <p><strong>Location:</strong> Madrid, Spain</p>
                                                 </div>
                                             </div> <!--Identifying the need of having molecular data to better characterize the biodiversity of the Balearic Islands.-->
+
+                                            <hr>
 
                                         </div>
                                     </article> <!-- 2023 -->
@@ -978,101 +959,91 @@
                                                 <div class="resume-position-time"><b>2022</b></div>
                                             </div>
 
-                                            <h3 class="paper-title">A georeferenced dataset of Italian rotifer records.</h3>
+                                            <h3 class="paper-title">9. A georeferenced dataset of Italian rotifer records.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> Gualdi A., Ferrari V., Rossetti G., Tiberti R., Obertegger U., Marrone F., Karimullah K., <b>Cancellario T.</b>, Fontaneto D.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (not presenting author)</p>
                                                     <p><strong>Conference:</strong> XVI International Rotifer Symposium</p>
                                                     <p><strong>Location:</strong> Zagreb, Croatia</p>
                                                 </div>
                                             </div> <!--A georeferenced dataset of Italian rotifer records.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">A combination of host ecology, habitat, and evolutionary history explains differences in the microbiomes associated with rotifers.</h3>
+                                            <h3 class="paper-title">8. A combination of host ecology, habitat, and evolutionary history explains differences in the microbiomes associated with rotifers.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> Eckert E., <b>Cancellario T.</b>, Bodelier P., Declerck S., Diwen L., Samad S., Winder M., Zhou L., Fontaneto D.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (not presenting author)</p>
                                                     <p><strong>Conference:</strong> XVI International Rotifer Symposium</p>
                                                     <p><strong>Location:</strong> Zagreb, Croatia </p>
                                                 </div>
                                             </div> <!--A combination of host ecology, habitat, and evolutionary history explains differences in the microbiomes associated with rotifers.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Climate as the main driver of nutrients and phytoplankton dynamics in a deep oligomictic lake South of the Alps.</h3>
+                                            <h3 class="paper-title">7. Climate as the main driver of nutrients and phytoplankton dynamics in a deep oligomictic lake South of the Alps.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> Rogora M., Austoni M., <b>Cancellario T.</b>, Caroni R., Dresti C., Kamburska L., Lami A., Manca D., Marchetto A., Musazzi S., Tiberti R.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (not presenting author)</p>
                                                     <p><strong>Conference:</strong> International Society of Limnology</p>
                                                     <p><strong>Location:</strong> Berlin, Germany (Online) </p>
                                                 </div>
                                             </div> <!--Climate as the main driver of nutrients and phytoplankton dynamics in a deep oligomictic lake South of the Alps.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Do you need a tool for your ecological data? Try the open access R package biomonitoR!</h3>
+                                            <h3 class="paper-title">6. Do you need a tool for your ecological data? Try the open access R package biomonitoR!</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> Laini A., Guareschi S., Bolpagni R., Burgazzi G., Bruno D., Gutiérrez-Cánovas C., Miranda R., Mondy C., Várbíró G., & <b>Cancellario T.</b>
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (presenting author)</p>
                                                     <p><strong>Conference:</strong> SIBECOL</p>
                                                     <p><strong>Location:</strong> Aveiro, Portugal</p>
                                                 </div>
                                             </div> <!--Do you need a tool for your ecological data? Try the open access R package biomonitoR!-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Among demons and killers: Current and future potential distribution of two hyper successful invasive gammarids.</h3>
+                                            <h3 class="paper-title">5. Among demons and killers: Current and future potential distribution of two hyper successful invasive gammarids.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Laini A., & Guareschi S.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (presenting author)</p>
                                                     <p><strong>Conference:</strong> SIBECOL</p>
                                                     <p><strong>Location:</strong> Aveiro, Portugal</p>
                                                 </div>
                                             </div> <!--Among demons and killers: Current and future potential distribution of two hyper successful invasive gammarids.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">Invasive hell: potential distributions of invasive gammarids overlap in central Europe but not in South European coastal regions.</h3>
+                                            <h3 class="paper-title">4. Invasive hell: potential distributions of invasive gammarids overlap in central Europe but not in South European coastal regions.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Laini A., & Guareschi S.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (presenting author)</p>
                                                     <p><strong>Conference:</strong> Associazione Italiana di Oceanologia e Limnologia</p>
                                                     <p><strong>Location:</strong> S. Michele all’Adige, Italia (Online)</p>
                                                 </div>
                                             </div> <!--Invasive hell: potential distributions of invasive gammarids overlap in central Europe but not in South European coastal regions.-->
 
-                                            <hr>
-
-                                            <h3 class="paper-title">High frequency monitoring (HFM) through in-situ sensors as a support to lake quality evaluation and management: insights from the INTERREG project SIMILE in Lake Maggiore.</h3>
+                                            <h3 class="paper-title">3. High frequency monitoring (HFM) through in-situ sensors as a support to lake quality evaluation and management: insights from the INTERREG project SIMILE in Lake Maggiore.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> Rogora M., <b>Cancellario T.</b>, Caroni R., Kamburska L., Lami A., Manca D., Musazzi S., Tiberti R.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (not presenting author)</p>
                                                     <p><strong>Conference:</strong> Associazione Italiana di Oceanologia e Limnologia</p>
                                                     <p><strong>Location:</strong> S. Michele all’Adige, Italia (Online)</p>
                                                 </div>
                                             </div> <!--High frequency monitoring (HFM) through in-situ sensors as a support to lake quality evaluation and management: insights from the INTERREG project SIMILE in Lake Maggiore.-->
+
+                                            <hr>
 
                                         </div>
                                     </article> <!-- 2022 -->
@@ -1083,17 +1054,20 @@
                                                 <div class="resume-position-time"><b>2020</b></div>
                                             </div>
 
-                                            <h3 class="paper-title">DNA knowledge gaps and biodiversity analysis in reference databases about European freshwater macroinvertebrates.</h3>
+                                            <h3 class="paper-title">2. DNA knowledge gaps and biodiversity analysis in reference databases about European freshwater macroinvertebrates.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Miranda R., Baquero E., Escribano N., & Martìnez A.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Oral presentation </p>
+                                                    <p><strong>Type of participation:</strong> Oral presentation (presenting author)</p>
                                                     <p><strong>Conference:</strong> Asociacion Iberica de Limnologia (AIL-2020)</p>
                                                     <p><strong>Location:</strong> Murcia, Spain (Online)</p>
                                                 </div>
                                             </div> <!--DNA knowledge gaps and biodiversity analysis in reference databases about European freshwater macroinvertebrates.-->
+
+                                            <hr>
+
                                         </div>
                                     </article> <!-- 2020 -->
 
@@ -1103,13 +1077,13 @@
                                                 <div class="resume-position-time"><b>2019</b></div>
                                             </div>
 
-                                            <h3 class="paper-title">DNA knowledge gaps in reference databases about European freshwater macroinvertebrates.</h3>
+                                            <h3 class="paper-title">1. DNA knowledge gaps in reference databases about European freshwater macroinvertebrates.</h3>
                                             <div class="resume-summary-desc">
                                                 <div class="publication-details">
                                                     <p>
                                                         <strong>Authors:</strong> <b>Cancellario T.</b>, Escribano N., Baquero E., & Miranda R.
                                                     </p>
-                                                    <p><strong>Type of participation:</strong> Poster </p>
+                                                    <p><strong>Type of participation:</strong> Poster (presenting author)</p>
                                                     <p><strong>Conference:</strong> 11th Symposium for European Freshwater Sciences</p>
                                                     <p><strong>Location:</strong> Zagreb, Croatia</p>
                                                 </div>
@@ -1135,8 +1109,8 @@
 
                         <section class="resume-experience-section resume-section">
                             <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
-                                <i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Scientific Projects</h3>
-                            <p> Total: 8</p>
+                                <i class="resume-section-heading-icon bi bi-gear me-2"></i>Scientific Projects</h3>
+                            <p> Total: 9</p>
 
                             <div class="resume-timeline position-relative">
 
@@ -1146,23 +1120,23 @@
                                         <div class="resume-position-time"><b>05/2025 - 12/2025</b></div>
                                     </div>
 
-                                    <h3 class="paper-title">Hormigas</h3>
+                                    <h3 class="paper-title">9. Estudio de la diversidad de los formícidos de Menorca: muestreo, colecciones de referencia y análisis genético.</h3>
                                     <div class="resume-summary-desc">
                                         <div class="publication-details">
-                                            <p><strong>Principal Investigator:</strong> Dr Maria Capa Corrales</p>
+                                            <p><strong>Principal Investigator:</strong> Dr Maria Capa</p>
                                             <p><strong>Funding:</strong> <em>Conseill de Menorca</em></p>
                                         </div>
                                     </div>
 
-                                </article> <!--// Hormigas-->
+                                </article> <!--// Estudio de la diversidad de los formícidos de Menorca: muestreo, colecciones de referencia y análisis genético-->
 
                                 <article class="resume-timeline-item position-relative pb-2">
 
                                     <div class="resume-position-meta d-flex justify-content-between mb-1">
-                                        <div class="resume-position-time"><b>05/2025 - 12/2025</b></div>
+                                        <div class="resume-position-time"><b>01/2025 - 12/2025</b></div>
                                     </div>
 
-                                    <h3 class="paper-title">Identificación de anélidos en las Islas Baleares para la conservación y monitorización ambiental</h3>
+                                    <h3 class="paper-title">8. Identificación de anélidos en las Islas Baleares para la conservación y monitorización ambiental</h3>
                                     <div class="resume-summary-desc">
                                         <div class="publication-details">
                                             <p><strong>Principal Investigator:</strong> Dr Enrique Arboleda</p>
@@ -1175,27 +1149,43 @@
                                 <article class="resume-timeline-item position-relative pb-2">
 
                                     <div class="resume-position-meta d-flex justify-content-between mb-1">
-                                        <div class="resume-position-time"><b>01/2021 - 12/2025</b></div>
+                                        <div class="resume-position-time"><b>06/2025 - 10/2025</b></div>
                                     </div>
 
-                                    <h3 class="paper-title">Exploració, anàlisi i prospectiva de la Biodiversitat: Possibles respostes a l'estratègia 2030 de Desenvolupament Sostenible en un escenari de Canvi Global (PPCC BIO).</h3>
+                                    <h3 class="paper-title">7. High-resolution climate change information of Balearic Islands for multidisciplinary applications.</h3>
                                     <div class="resume-summary-desc">
                                         <div class="publication-details">
-                                            <p><strong>Principal Investigator:</strong> Dr Maria Capa Corrales</p>
-                                            <p><strong>Funding:</strong> <em>Govern de les Illes Balears - Ministerio de Ciencia e Innovación (MICINN)</em></p>
+                                            <p><strong>Principal Investigator:</strong> Dr Maria Capa</p>
+                                            <p><strong>Funding:</strong> <em>Barcelona Supercomputing Center - Dedicated computational hours</em></p>
                                         </div>
                                     </div>
 
-                                </article> <!--// Exploració, anàlisi i prospectiva de la Biodiversitat: Possibles respostes a l'estratègia 2030 de Desenvolupament Sostenible en un escenari de Canvi Global (PPCC BIO).-->
+                                </article> <!--// High-resolution climate change information of Balearic Islands for multidisciplinary applications.-->
 
                                 <div id="more-projects" class="d-none">
+                                    <article class="resume-timeline-item position-relative pb-2">
+
+                                        <div class="resume-position-meta d-flex justify-content-between mb-1">
+                                            <div class="resume-position-time"><b>01/2021 - 12/2025</b></div>
+                                        </div>
+
+                                        <h3 class="paper-title">6. Exploració, anàlisi i prospectiva de la Biodiversitat: Possibles respostes a l'estratègia 2030 de Desenvolupament Sostenible en un escenari de Canvi Global (PPCC BIO).</h3>
+                                        <div class="resume-summary-desc">
+                                            <div class="publication-details">
+                                                <p><strong>Principal Investigator:</strong> Dr Maria Capa Corrales</p>
+                                                <p><strong>Funding:</strong> <em>Govern de les Illes Balears - Ministerio de Ciencia e Innovación (MICINN)</em></p>
+                                            </div>
+                                        </div>
+
+                                    </article> <!--// Exploració, anàlisi i prospectiva de la Biodiversitat: Possibles respostes a l'estratègia 2030 de Desenvolupament Sostenible en un escenari de Canvi Global (PPCC BIO).-->
+
                                     <article class="resume-timeline-item position-relative pb-2">
 
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time"><b>2019 - 2022</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">SIMILE – Sistema informativo per il monitoraggio integrato dei laghi insubrici e dei loro ecosistemi</h3>
+                                        <h3 class="paper-title">5. SIMILE – Sistema informativo per il monitoraggio integrato dei laghi insubrici e dei loro ecosistemi</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p><strong>Principal Investigator:</strong> Dr Michela Rogora</p>
@@ -1211,7 +1201,7 @@
                                             <div class="resume-position-time"><b>2018 - 2021</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">Red de Observatorios de la Biodiversidad en Navarra (ROBIN)</h3>
+                                        <h3 class="paper-title">4. Red de Observatorios de la Biodiversidad en Navarra (ROBIN)</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p><strong>Principal Investigator:</strong> Dr Enrique Baquero</p>
@@ -1227,7 +1217,7 @@
                                             <div class="resume-position-time"><b>2018 - 2021</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">Estudios de monitorización integrada en una cuenca forestal del Pirineo</h3>
+                                        <h3 class="paper-title">3. Estudios de monitorización integrada en una cuenca forestal del Pirineo</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p><strong>Principal Investigator:</strong> Dr Rafael Miranda</p>
@@ -1243,7 +1233,7 @@
                                             <div class="resume-position-time"><b>-</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">1000 intermittent rivers Project. An international initiative to gain understanding of the ecology of intermittent rivers</h3>
+                                        <h3 class="paper-title">2. 1000 intermittent rivers Project. An international initiative to gain understanding of the ecology of intermittent rivers</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p><strong>Principal Investigator:</strong> Dr Thibault Datry</p>
@@ -1259,7 +1249,7 @@
                                             <div class="resume-position-time"><b>-</b></div>
                                         </div>
 
-                                        <h3 class="paper-title">A new insight into the Stygofauna Mundi: assembling a global dataset for aquatic fauna in subterranean environments</h3>
+                                        <h3 class="paper-title">1. A new insight into the Stygofauna Mundi: assembling a global dataset for aquatic fauna in subterranean environments</h3>
                                         <div class="resume-summary-desc">
                                             <div class="publication-details">
                                                 <p><strong>Principal Investigator:</strong> Dr Alejandro Martinez</p>
@@ -1296,8 +1286,8 @@
                                 <article class="resume-timeline-item position-relative pb-2">
 
                                     <div class="resume-timeline-item-header mb-2">
-                                        <h3 class="resume-position-title small-mode">Balearica</h3>
-                                    </div><!--//resume-timeline-item-header-->
+                                        <h3 class="resume-position-title small-mode">3. Balearica</h3>
+                                    </div>
 
                                     <div class="resume-timeline-item-desc"> <!-- resume-summary-desc-->
                                         <p class="resume-summary-desc">
@@ -1309,14 +1299,14 @@
                                             <strong>Web</strong> <a href="https://balearica.uib.eu/en" target="_blank">https://balearica.uib.eu/en</a> <br>
                                         </p>
 
-                                    </div><!--//resume-timeline-item-desc-->
+                                    </div>
 
                                 </article><!--// Balearica-->
 
                                 <article class="resume-timeline-item position-relative pb-2">
 
                                     <div class="resume-timeline-item-header mb-2">
-                                        <h3 class="resume-position-title small-mode">biodumpy</h3>
+                                        <h3 class="resume-position-title small-mode">2. biodumpy</h3>
                                     </div><!--//resume-timeline-item-header-->
 
                                     <div class="resume-timeline-item-desc"> <!-- resume-summary-desc-->
@@ -1338,7 +1328,7 @@
                                 <article class="resume-timeline-item position-relative pb-2">
 
                                     <div class="resume-timeline-item-header mb-2">
-                                        <h3 class="resume-position-title small-mode">biomonitoR</h3>
+                                        <h3 class="resume-position-title small-mode">1. biomonitoR</h3>
                                     </div><!--//resume-timeline-item-header-->
 
                                     <div class="resume-timeline-item-desc"> <!-- resume-summary-desc-->
@@ -1365,6 +1355,7 @@
                         <section class="resume-experience-section resume-section">
                             <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
                                 <i class="resume-section-heading-icon bi bi-airplane me-2"></i>Research visit</h3>
+                            <p> Total: 3</p>
                             <div class="resume-timeline position-relative">
 
                                 <article class="resume-timeline-item position-relative pb-2">
@@ -1374,7 +1365,7 @@
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time">2023/05/23 - 2023/05/27</div>
                                         </div>
-                                        <h3 class="resume-position-title small-mode">University of Turin</h3>
+                                        <h3 class="resume-position-title small-mode">3. University of Turin</h3>
 
                                     </div>
                                     <div class="resume-timeline-item-desc">
@@ -1390,7 +1381,7 @@
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time">2021/01/15 - 2021/4/15</div>
                                         </div>
-                                        <h3 class="resume-position-title small-mode">National Research Council – Institute of Ecosystem Study</h3>
+                                        <h3 class="resume-position-title small-mode">2. National Research Council – Institute of Ecosystem Study</h3>
 
                                     </div>
                                     <div class="resume-timeline-item-desc">
@@ -1406,7 +1397,7 @@
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time">2019/08/25 - 2019/09/07</div>
                                         </div>
-                                        <h3 class="resume-position-title small-mode">National Research Council – Institute of Ecosystem Study</h3>
+                                        <h3 class="resume-position-title small-mode">1. National Research Council – Institute of Ecosystem Study</h3>
 
                                     </div>
                                     <div class="resume-timeline-item-desc">
@@ -1423,6 +1414,7 @@
                         <section class="resume-experience-section resume-section">
                             <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3">
                                 <i class="resume-section-heading-icon bi bi-book me-2"></i>Teaching</h3>
+                            <p> Total: 5</p>
                             <div class="resume-timeline position-relative">
 
                                 <article class="resume-timeline-item position-relative pb-2">
@@ -1432,14 +1424,16 @@
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time">2024/02/20 - 2024/02/23</div>
                                         </div>
-                                        <h3 class="resume-position-title small-mode">University of the Balearic Islands</h3>
+                                        <h3 class="resume-position-title small-mode">5. University of the Balearic Islands</h3>
                                     </div>
                                     <div class="resume-timeline-item-desc">
-                                        <p class="resume-summary-desc"> <b>Title:</b> Introduction to R and Bash</p>
-                                        <p class="resume-summary-desc"> <b>Description:</b> Taught a course focused on R programming, emphasizing data analysis, scripting, and automation. Provided hands-on training in data manipulation, file processing, and reproducible analysis using R.</p>
+                                        <p class="resume-summary-desc">
+                                            <b>Title:</b> Introduction to R and Bash <br>
+                                            <b>Description:</b> Taught a course focused on R programming, emphasizing data analysis, scripting, and automation. Provided hands-on training in data manipulation, file processing, and reproducible analysis using R.
+                                        </p>
                                     </div>
 
-                                </article><!--//Introduction to R and Bash-->
+                                </article><!--// Introduction to R and Bash-->
 
                                 <article class="resume-timeline-item position-relative pb-2">
 
@@ -1448,19 +1442,88 @@
                                         <div class="resume-position-meta d-flex justify-content-between mb-1">
                                             <div class="resume-position-time">2024/03/12 - 2024/03/14</div>
                                         </div>
-                                        <h3 class="resume-position-title small-mode">University of the Balearic Islands</h3>
+                                        <h3 class="resume-position-title small-mode">4. University of the Balearic Islands</h3>
                                     </div>
                                     <div class="resume-timeline-item-desc">
-                                        <p class="resume-summary-desc"> <b>Title:</b>Introduction to the Management of Samples and Data from Natural History Collections</p>
-                                        <p class="resume-summary-desc"> <b>Description:</b> Introduced fundamental principles of managing and analyzing biological data from natural history collections. Covered data organization, curation, and basic analysis techniques to support biodiversity research and collection-based studies.</p>
+                                        <p class="resume-summary-desc">
+                                            <b>Title:</b> Introduction to the Management of Samples and Data from Natural History Collections <br>
+                                            <b>Description:</b> Introduced fundamental principles of managing and analyzing biological data from natural history collections. Covered data organization, curation, and basic analysis techniques to support biodiversity research and collection-based studies.
+                                        </p>
                                     </div>
 
-                                </article><!--//Introduction to the Management of Samples and Data from Natural History Collections-->
+                                </article><!--// Introduction to the Management of Samples and Data from Natural History Collections-->
+
+                                <article class="resume-timeline-item position-relative pb-2">
+
+                                    <div class="resume-timeline-item-header mb-2">
+
+                                        <div class="resume-position-meta d-flex justify-content-between mb-1">
+                                            <div class="resume-position-time">Academic years 2018/2019 to 2019/2020</div>
+                                        </div>
+                                        <h3 class="resume-position-title small-mode">3. University of Navarra</h3>
+                                    </div>
+                                    <div class="resume-timeline-item-desc">
+                                        <p class="resume-summary-desc">
+                                            <b>Title:</b> Hydrobiology course <br>
+                                            <b>Description:</b> Teaching Assistant. Assisted with course instruction, including practical sessions, student support, and assessment tasks. Contributed to course delivery and fieldwork organization. Delivered course content and communication in Spanish.
+                                        </p>
+                                    </div>
+
+                                </article><!--// Hydrobiology course-->
+
+                                <div id="more-Teaching" class="d-none">
+                                    <article class="resume-timeline-item position-relative pb-2">
+
+                                    <div class="resume-timeline-item-header mb-2">
+
+                                        <div class="resume-position-meta d-flex justify-content-between mb-1">
+                                            <div class="resume-position-time">Academic years 2017/2018 to 2019/2020</div>
+                                        </div>
+                                        <h3 class="resume-position-title small-mode">2. University of Navarra</h3>
+                                    </div>
+                                    <div class="resume-timeline-item-desc">
+                                        <p class="resume-summary-desc">
+                                            <b>Title:</b> Botany course <br>
+                                            <b>Description:</b> Teaching Assistant. Assisted with course instruction, including practical sessions, student support, and assessment tasks. Contributed to course delivery and fieldwork organization. Delivered course content and communication in Spanish.
+                                        </p>
+                                    </div>
+
+                                </article><!--// Botany course-->
+
+                                    <article class="resume-timeline-item position-relative pb-2">
+
+                                        <div class="resume-timeline-item-header mb-2">
+
+                                            <div class="resume-position-meta d-flex justify-content-between mb-1">
+                                                <div class="resume-position-time">Academic years 2017/2018 to 2019/2020</div>
+                                            </div>
+                                            <h3 class="resume-position-title small-mode">1. University of Navarra</h3>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <p class="resume-summary-desc">
+                                                <b>Title:</b> Ecology course <br>
+                                                <b>Description:</b> Teaching Assistant. Assisted with course instruction, including practical sessions, student support, and assessment tasks. Contributed to course delivery and fieldwork organization. Delivered course content and communication in both English and Spanish.
+                                            </p>
+                                        </div>
+
+                                    </article><!--// Ecology course-->
+                                </div>
+
+                                <!-- Centered link-style button -->
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-link p-0 align-baseline d-inline-flex align-items-center gap-1"
+                                            onclick="toggleSection('more-Teaching', this)"
+                                            id="toggle-Teaching">
+                                        <span class="toggle-text">Show more</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </button>
+                                </div>
 
                             </div>
                         </section><!--// Teaching-->
 
-                    </div><!--//col-8-->
+                    </div>
+
                     <div class="col-12 col-lg-4 ps-lg-4">
 
                         <section class="resume-skills-section resume-section">
@@ -1497,26 +1560,25 @@
 
                             <h4 class="resume-section-heading small-mode">Hard</h4>
                             <ul class="list-inline">
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">GIS</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Project writing</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge">Python</span></li>
-                                <li class="list-inline-item"><span class="badge resume-skill-badge">Software development</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Quantitative analysis</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge">R</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge">R Markdown</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge">R Shiny</span></li>
-                                <li class="list-inline-item"><span class="badge resume-skill-badge">GIS</span></li>
-                                <li class="list-inline-item"><span class="badge resume-skill-badge">Quantitative analysis</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Software development</span></li>
                                 <li class="list-inline-item"><span class="badge resume-skill-badge">Spatial modeling</span></li>
                             </ul>
 
                             <h4 class="resume-section-heading small-mode">Soft</h4>
                             <ul class="list-inline">
-                                <li class="list-inline-item"><span class="badge resume-skill-badge">Team lead</span>
-                                </li>
-                                <li class="list-inline-item"><span
-                                        class="badge resume-skill-badge">Problem solving</span></li>
-                                <li class="list-inline-item"><span class="badge resume-skill-badge">Adaptability</span>
-                                </li>
-                                <li class="list-inline-item"><span
-                                        class="badge resume-skill-badge">Public Speaking</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Adaptability</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Collaboration</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Critical Thinking</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Problem solving</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Public Speaking</span></li>
+                                <li class="list-inline-item"><span class="badge resume-skill-badge">Team lead</span></li>
                             </ul>
                         </section><!--// Skills-->
 
@@ -1542,8 +1604,21 @@
 
                     </div><!--//col-side-->
                 </div><!--//row-->
-            </div><!--//resume-body-->
+
+                <!--Go to Top-->
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-link p-0 align-baseline d-inline-flex align-items-center gap-1"
+                            onclick="scrollToTop()"
+                            id="go-to-top">
+                        <span class="toggle-text">Go to top</span>
+                        <i class="bi bi-arrow-up"></i>
+                    </button>
+                </div>
+
+            </div><!--// Main Info-->
+
         </div><!--//resume-wrapper-->
+
         <footer class="footer text-center py-4">
             <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
             <small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill"
